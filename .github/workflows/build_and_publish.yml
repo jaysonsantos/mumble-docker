@@ -52,7 +52,7 @@ jobs:
         run: |
           TAG_ARRAY=()
           for current in $PRE_TAGS; do
-            TAG_ARRAY+=("mumblevoip/$current" "ghcr.io/mumble-voip/$current")
+            TAG_ARRAY+=("ghcr.io/jaysonsantos/$current")
           done
           TAGS="$( IFS=","; echo "${TAG_ARRAY[*]}" )"
           echo "TAGS=$TAGS" >> $GITHUB_ENV
